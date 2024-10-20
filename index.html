@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+      <nav id="desktop-nav">
+          <div class="logo"><b>Ravindrakumar Singaram</b></div>
+          <div>
+              <ul class="nav-links">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#experience">Work History</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#cert">Certification</a></li>                 
+                  <li><a href="#hobbies">Hobbies</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+          </div>
+      </nav>
+      <nav id="hamburger-nav">
+          <div class="logo">Ravindrakumar Singaram</div>
+          <div class="hamburger-menu">
+              <div class="hamburger-icon" onclick="toggleMenu()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+              <div class="menu-links">
+                  <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                  <li><a href="#experience" onclick="toggleMenu()">Work History</a></li>
+                  <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                  <li><a href="#cert" onclick="toggleMenu()">Certification</a></li>
+                  <li><a href="#hobbies" onclick="toggleMenu()">Hobbies</a></li>
+                  <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+              </div>
+          </div>
+      </nav>
+      <section id="profile">
+          <div class="section__pic-container">
+              <img src="./assets/profile-pic.jpeg" alt="Joe profile picture" />
+          </div>
+          <div class="section__text">
+              <p class="section__text__p1">Hello, I'm</p>
+              <h1 class="title">Ravindrakumar Singaram</h1>
+              <p class="section__text__p2">Devops Engineer</p>
+              <div class="btn-container">
+                  <button class="btn btn-color-2"
+                          onclick="window.open('./assets/resume-example.pdf')">
+                      Download Resume
+                  </button>
+
+              </div>
+              <div id="socials-container">
+                  <img src="./assets/linkedin.png"
+                       alt="My LinkedIn profile"
+                       class="icon"
+                       onclick="location.href='https://linkedin.com/'" />
+
+              </div>
+          </div>
+      </section>
+      <section id="about">
+          <p class="section__text__p1">Get To Know More</p>
+          <h1 class="title">About Me</h1>
+          <div class="section-container">
+              <div class="section__pic-container">
+                  <img src="./assets/profile-pic2.jpeg"
+                       alt="Profile picture"
+                       class="about-pic" />
+              </div>
+              <div class="about-details-container">
+                  <div class="about-containers">
+                      <div class="details-container">
+                          <img src="./assets/experience.png"
+                               alt="Experience icon"
+                               class="icon" />
+                          <h3>Experience</h3>
+                          <p>3.7 years <br />Devops Engineer</p>
+                      </div>
+                      <div class="details-container">
+                          <img src="./assets/education.png"
+                               alt="Education icon"
+                               class="icon" />
+                          <h3>Education</h3>
+                          <p>Bsc Information Technology</p>
+                      </div>
+
+                  </div>
+                  <div class="text-container">
+                      <p>
+                          Experienced DevOps Engineer having a foundation in fundamentals of cloud computing with 3+ years of hands-on relevant experience in architecting/automating and optimizing mission-critical deployments over a large infrastructure AWS. 1. 5 years of Experience in designing, implementing, and managing secure cloud environments AZURE. Proficient with Configuration Management tools, and in developing CI/ CD pipelines. Experience specializing in Azure AD, REST API integration, and LDAP Authentication. Delivering exceptional client outcomes with strong communication skills.!
+                      </p>
+                  </div>
+              </div>
+          </div>
+
+      </section>
+      <section id="experience">
+          <p class="section__text__p1">Explore My</p>
+          <h1 class="title">Work History</h1>
+          <div class="experience-details-container">
+              <div class="about-containers">
+                  <div class="details-container">
+                      <h2 class="experience-sub-title">May 2022–Nov 2023</h2>
+                      <div class="article-container">
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>Nuvento – Kochi</h3>
+                                  <p>
+                                      Devops Engineer
+                                  </p>
+                              </div>
+                          </article>
+
+
+
+                      </div>
+                  </div>
+                  <div class="details-container">
+                      <h2 class="experience-sub-title">June 2018 – May 2022</h2>
+                      <div class="article-container">
+
+
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>
+                                      SRM Technologies – Chennai
+                                  </h3>
+                                  <p> DevOps Engineer </p>
+                              </div>
+                          </article>
+                      </div>
+                  </div>
+              </div>
+          </div>
+		  
+		  <div class="details-container">
+                      <h2 class="experience-sub-title">November 2016 – May 2018</h2>
+                      <div class="article-container">
+
+
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>
+                                      Cloudi5 Technologies – Coimbatore
+                                  </h3>
+                                  <p> Desktop Support </p>
+                              </div>
+                          </article>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </section>
+      <section id="skills">
+          <p class="section__text__p1">Explore My</p>
+          <h1 class="title">Skills</h1>
+          <div class="experience-details-container">
+              <div class="about-containers">
+                  <div class="details-container">
+                      <h2 class="experience-sub-title">Development</h2>
+                      <div class="article-container">
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>Version Control Systems: Tools like Git for managing code changes.</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>AWS using services like EC2, S3, EFS, IAM, Load Balancer, Auto Scaling, VPC, Route 53, Cloud Front, CloudWatch, RDS.</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>CI/CD Tools: Experience with continuous integration and continuous deployment tools like Jenkins, GitLab.</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>Infrastructure as Code (IaC): Experience with tools like Terraform for managing infrastructure.</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>Networking and Security: Understanding of networking concepts, firewalls, and security best practices.</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>•	Linux and Windows Administration</h3>
+                                  <p>Intermediate</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>AWS Services</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                          
+
+                      </div>
+                  </div>
+                  <div class="details-container">
+                      <h2 class="experience-sub-title"> Tools</h2>
+                      <div class="article-container">
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>Visual Studio</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>Visual Code</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>CI/CD: Jenkins</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>IaC: Terraform</h3>
+                                  <p>Experienced (1.7 Years)</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>Git</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>Security: Sonarqube</h3>
+                                  <p>Experienced</p>
+                              </div>
+                          </article>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </section>
+      <section id="cert">
+          <p class="section__text__p1">Explore My</p>
+          <h1 class="title">Certifications</h1>
+          <div class="experience-details-container">
+              <div class="about-containers">
+                  <div class="details-container">
+                      <h2 class="experience-sub-title">AZ-900: Microsoft Azure Fundamentals</h2>
+                      <div class="article-container">
+                          <article>
+                              <img src="./assets/checkmark.png"
+                                   alt="Experience icon"
+                                   class="icon" />
+                              <div>
+                                  <h3>Aatralz - Chennai </h3>
+
+                              </div>
+                          </article>
+
+
+
+                      </div>
+                  </div>
+                  
+
+      </section>
+      <section id="hobbies">
+          <p class="section__text__p1">My Interests </p>
+          <h1 class="title">Hobbies</h1>
+          <div class="experience-details-container">
+              <div class="about-containers">
+                  <div class="details-container color-container">
+                      <div class="article-container">
+                          <img src="./assets/project-1.png"
+                               alt="Project 3"
+                               class="project-img" />
+                      </div>
+                      <h2 class="experience-sub-title project-title">Pet Lover</h2>
+                      <div class="btn-container">
+                          <button class="btn btn-color-2 project-btn"
+                                  onclick="location.href='https://www.instagram.com/brick_poto/profilecard/?igsh=cTg4bHcza2l1aDd3'">
+                              Page 1
+                          </button>
+                      </div>
+                  </div>
+
+                  <div class="details-container color-container">
+                      <div class="article-container">
+                          <img src="./assets/project-2.png"
+                               alt="Project 3"
+                               class="project-img" />
+                      </div>
+                      <h2 class="experience-sub-title project-title">Website Devlopment</h2>
+                      <div class="btn-container">
+                          <button class="btn btn-color-2 project-btn"
+                                  onclick="location.href='http://www.donboscofieldschool.com/'">
+                              Sample 1
+                          </button>
+                          <button class="btn btn-color-2 project-btn"
+                                  onclick="location.href='https://pawfist.com/'">
+                              Sample 2
+                          </button>
+                      </div>
+                  </div>
+
+
+                
+
+                  <div class="details-container color-container">
+                      <div class="article-container">
+                          <img src="./assets/project-4.png"
+                               alt="Project 3"
+                               class="project-img" />
+                      </div>
+                      <h2 class="experience-sub-title project-title">Video Editing</h2>
+                      <div class="btn-container">
+                          <button class="btn btn-color-2 project-btn"
+                                  onclick="location.href='https://www.instagram.com/reel/DBV_NKESbGpwbW1kiD3-BqvzWNN50b3QXukjSQ0/?igsh=MTNsMmI1bzV4OWlmYQ=='">
+                              Sample 1
+                          </button>
+                          <button class="btn btn-color-2 project-btn"
+                                  onclick="location.href='https://www.instagram.com/reel/C7N8mzOR4UrwGaplQqRSYh5Ao93fd6amQn94CI0/?igsh=MWdyc245YzNwcDk4bw=='">
+                              Sample 2
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </section>
+
+      <section id="contact">
+          <p class="section__text__p1">Get in Touch</p>
+          <h1 class="title">Contact Me</h1>
+          <div class="contact-info-upper-container">
+              <div class="contact-info-container">
+                  <img src="./assets/email.png"
+                       alt="Email icon"
+                       class="icon contact-icon email-icon" />
+                  <p><a href="mailto:ravindrakumarsingaram1996@gmail.com">ravindrakumarsingaram1996@gmail.com</a></p>
+              </div>
+              <div class="contact-info-container">
+                  <img src="./assets/linkedin.png"
+                       alt="LinkedIn icon"
+                       class="icon contact-icon" />
+                  <p><a href="https://www.linkedin.com/in/ravindrakumar-singaram-6b3674236">LinkedIn</a></p>
+              </div>
+          </div>
+      </section>
+      <footer>
+          <nav>
+              <div class="nav-links-container">
+                  <ul class="nav-links">
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#experience">Work History</a></li>
+                      <li><a href="#skills">Skills</a></li>
+                      <li><a href="#cert">Certification</a></li>
+                      
+                      <li><a href="#hobbies">Hobbies</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                  </ul>
+              </div>
+          </nav>
+          <p>Copyright &#169; 2024 Ravindrakumar Singaram. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+  </body>
+</html>
